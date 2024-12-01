@@ -11,18 +11,18 @@ const Hero = () => {
       </div>
       <section class=" lg:px-[80px] px-4 flex flex-col-reverse justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
         <div class="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-          <h1 class="mb-8 text-7xl font-bold text-white sm:text-5xl md:mb-2 md:text-[96px]">
+          <h1 class="mb-8 z-50 text-7xl font-bold text-white sm:text-5xl md:mb-2 md:text-[96px]">
             5KSANA
           </h1>
 
-          <p class="mb-8  text-white md:mb-6 lg:w-4/5 xl:text-[32px]">
+          <p class="mb-8 z-50  text-white md:mb-6 lg:w-4/5 xl:text-[32px]">
             BITCOIN ARTIST & <br className="hidden lg:block" />
             FASHION DESIGNER
           </p>
 
           <button
             type="button"
-            class=" text-white bg-transparent border-white border focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
+            class="z-50 text-white bg-transparent border-white border focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
           >
             BROWSE GALLERY
           </button>
