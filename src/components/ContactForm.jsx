@@ -58,7 +58,7 @@ const ContactForm = () => {
                 />
                 <label
                   htmlFor="privacy"
-                  className="ml-2 text-gray-400 whitespace-nowrap"
+                  className="ml-2 text-gray-400 lg:whitespace-nowrap whitespace-normal"
                 >
                   I have read and agree with the privacy policy
                 </label>
@@ -78,11 +78,11 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className=" absolute h-40 w-40 z-50  top-[10%] left-[-10%]  bg-[#Fcc800] opacity-100 blur-3xl animate-glow" />
+      <div className="  absolute h-40 w-40 z-50  top-[10%] left-[-10%]  bg-[#Fcc800] opacity-100 blur-3xl animate-glow" />
       <div className=" absolute h-40 w-40 z-50  bottom-[0%] right-[-10%]  bg-yellow-400 opacity-100 blur-3xl animate-glow" />
       <img
         src={Bit1}
-        className="absolute h-[116px] w-[116px] lg:bottom-4 bottom-[-19%] left-[-10%]"
+        className="animate-pulse absolute h-[116px] w-[116px] lg:bottom-4 bottom-[-19%] left-[-10%]"
       />
       <img
         src={Bit2}
@@ -90,7 +90,7 @@ const ContactForm = () => {
       />
       <img
         src={Bit3}
-        className="absolute h-[120px] w-[120px] top-[-10%] right-[-10%]"
+        className="animate-bounce absolute h-[120px] w-[120px] top-[-10%] right-[-10%]"
       />
     </div>
   );

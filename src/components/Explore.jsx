@@ -8,11 +8,22 @@ const Explore = () => {
       <img src={Frame} className="h-screen w-full object-cover" alt="Frame" />
 
       {/* Centered Text */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white text-5xl md:text-9xl font-bold text-center">
+      <div className="absolute font-sansation inset-0 flex flex-col items-center justify-center">
+        <h1
+          className="text-white  text-5xl md:text-9xl font-bold text-center"
+          data-aos="zoom-in-up"
+        >
           EXPLORE THE
-          <br /> COLLECTION
         </h1>
+
+        {/* <br data-aos="fade-down" /> */}
+        <p
+          className="text-white text-5xl md:text-9xl font-bold text-center"
+          data-aos="fade-down"
+        >
+          {" "}
+          COLLECTION
+        </p>
       </div>
     </div>
   );

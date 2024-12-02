@@ -1,8 +1,7 @@
 import React from "react";
-import { FaEye, FaShoppingBag, FaShoppingCart } from "react-icons/fa";
 import Art from "../assets/Art.png";
 import { FiShoppingBag } from "react-icons/fi";
-import Bitcoin from "../assets/Bitcoin.png";
+import Bitcoin from "../assets/bitcoin.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -92,7 +91,7 @@ const ExploreMobile = () => {
 
       <button
         type="button"
-        class="mt-8 text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
+        className="mt-8 text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
       >
         VIEW MORE
       </button>
