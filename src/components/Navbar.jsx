@@ -18,7 +18,7 @@ const Navbar = () => {
         <img src={Logo} className="text-xl font-bold" />
         <div className="flex flex-row items-center gap-12">
           <div className="hidden md:inline-flex items-center space-x-6">
-            <Link to="/" className="hover:text-gray-400">
+            <Link to="/Shop" className="hover:text-gray-400">
               SHOP
             </Link>
             <Link to="/" className="hover:text-gray-400">

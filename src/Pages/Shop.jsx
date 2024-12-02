@@ -42,7 +42,7 @@ const Shop = () => {
       </div>
 
       {/* Tabs */}
-      <div className="lg:flex flex-wrap space-y-4 justify-center space-x-4 bg-black py-4 text-xs">
+      <div className="lg:flex flex-wrap lg:space-y-0 space-y-4 justify-center space-x-4 bg-black py-4 text-xs">
         {tabs.map((tab, index) => (
           <button
             key={index}
