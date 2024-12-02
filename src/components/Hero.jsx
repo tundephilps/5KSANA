@@ -12,7 +12,7 @@ const Hero = () => {
       <section className=" lg:px-[80px] px-4 flex flex-col-reverse justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
         <div className="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
           <h1
-            className="mb-8 z-50 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 md:text-[96px]"
+            className="mb-8 z-30 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 md:text-[96px]"
             data-aos="fade-right"
             data-aos-delay="100"
             // data-aos-easing="ease-in-sine"
@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
 
           <p
-            className="mb-8 z-50  text-white md:mb-6 lg:w-4/5 xl:text-[32px]"
+            className="mb-8 z-30  text-white md:mb-6 lg:w-4/5 xl:text-[32px]"
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-easing="ease-in-sine"
@@ -32,7 +32,7 @@ const Hero = () => {
 
           <button
             type="button"
-            className="z-50 text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
+            className="z-30 text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
             data-aos="fade-right"
             data-aos-delay="500"
             data-aos-easing="ease-in-sine"
@@ -42,7 +42,7 @@ const Hero = () => {
           <Circular />
         </div>
 
-        <div className="lg:h-48  block  rounded-lg shadow-lg h-[500px]  z-50">
+        <div className="lg:h-48  block  rounded-lg shadow-lg h-[500px]  z-30">
           <div className="coin">
             <div className="side heads">
               <svg

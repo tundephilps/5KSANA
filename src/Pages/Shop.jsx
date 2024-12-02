@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import { FaGavel } from "react-icons/fa"; // Icon for Auction
 import { FiFilter, FiShoppingBag } from "react-icons/fi"; // Icon for Filters
 import { RiAuctionLine } from "react-icons/ri";
 import { GiSettingsKnobs } from "react-icons/gi";

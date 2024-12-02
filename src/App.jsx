@@ -7,6 +7,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Shop from "./Pages/Shop";
+import CardPage from "./Pages/CardPage";
+import Cart from "./Pages/Cart";
 
 function App() {
   useEffect(() => {
@@ -21,8 +23,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-
           <Route path="/Shop" element={<Shop />} />
+          <Route path="/CardPage" element={<CardPage />} />
+
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
         <Footer />
       </Router>

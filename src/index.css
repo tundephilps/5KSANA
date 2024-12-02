@@ -11,6 +11,20 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* adjust width as needed */
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* adjust color as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* adjust color as needed */
+  border-radius: 10px;
+}
+
 /* From Uiverse.io by JohnnyCSilva */
 .coin {
   font-size: 200px;
