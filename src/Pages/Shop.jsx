@@ -21,7 +21,7 @@ const Shop = () => {
   ];
 
   return (
-    <div className="bg-black lg:px-[80px] px-4">
+    <div className="bg-black lg:px-[80px] px-1">
       {/* Filters */}
       <div className="flex items-center justify-between">
         <p className="text-white text-4xl font-medium">SHOP</p>
@@ -57,7 +57,7 @@ const Shop = () => {
         ))}
       </div>
 
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-4 gap-2">
         {/* Card */}
         <div>
           <div className="border-purple-700 border lg:p-4 p-2 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/20 to-black">

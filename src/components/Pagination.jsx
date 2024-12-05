@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Pagination = ({ totalPages = 8 }) => {
+const Pagination = ({ totalPages = 6 }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const handlePrev = () => {

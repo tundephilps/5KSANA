@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import Shop from "./Pages/Shop";
 import CardPage from "./Pages/CardPage";
 import Cart from "./Pages/Cart";
+import Payment from "./Pages/Payment";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,8 @@ function App() {
           <Route path="/CardPage" element={<CardPage />} />
 
           <Route path="/Cart" element={<Cart />} />
+
+          <Route path="/Payment" element={<Payment />} />
         </Routes>
         <Footer />
       </Router>

@@ -3,21 +3,23 @@ import React from "react";
 import { FaArrowDown } from "react-icons/fa";
 import Circular from "./Circular";
 
-const Hero = () => {
+const HeroMobile = () => {
   return (
     <div className="relative lg:h-screen h-full bg-black ">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <div className="flex  ml-[55%] mt-[5%]  lg:w-[80vh] lg:h-[80vh] h-64 w-64 bg-gradient-to-r from-[#ffbc00] to-[#ff6b00] rounded-full blur-3xl opacity-30 animate-pulse" />
+        <div className="absolute lg:top-1/2 top-[30%] right-12 transform -translate-x-1/2 -translate-y-1/2 w-[80vh] h-[80vh]  bg-gradient-to-r from-[#ffbc00] to-[#ff6b00] rounded-full blur-3xl opacity-30 animate-pulse" />
       </div>
-      <section className="grid grid-cols-2 w-full">
-        <div className=" h-screen flex flex-col justify-center my-auto px-20">
+      <section className=" lg:px-[80px] px-4 flex flex-col-reverse justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+        <div className="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
           <h1
-            className="mb-[4rem] z-30 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 lg:text-[750%]"
-            // data-aos="fade-right"
-            // data-aos-delay="100"
+            className="mb-8 z-30 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 md:text-[96px]"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            // data-aos-easing="ease-in-sine"
           >
             5KSANA
           </h1>
+
           <p
             className="mb-8 z-30  text-white md:mb-6 lg:w-4/5 xl:text-[32px]"
             data-aos="fade-right"
@@ -27,19 +29,20 @@ const Hero = () => {
             BITCOIN ARTIST & <br className="hidden lg:block" />
             FASHION DESIGNER
           </p>
+
           <button
             type="button"
-            className="z-30 lg:w-44 w-full text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5   me-2 mb-8"
-            // data-aos="fade-right"
-            // data-aos-delay="500"
-            // data-aos-easing="ease-in-sine"
+            className="z-30 text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
           >
             BROWSE GALLERY
           </button>
-
           <Circular />
         </div>
-        <div className=" h-screen w-full flex items-center justify-center">
+
+        <div className="lg:h-48   rounded-lg shadow-lg h-[500px] items-center justify-center flex  z-30">
           <div className="coin">
             <div className="side heads">
               <svg
@@ -113,4 +116,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroMobile;

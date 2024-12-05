@@ -31,7 +31,7 @@ const CircularText = () => {
 
 const Circular = () => {
   return (
-    <div className="flex justify-center items-center  bg-black">
+    <div className="flex  items-center ">
       <CircularText />
     </div>
   );
