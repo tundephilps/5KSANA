@@ -13,8 +13,8 @@ const Hero = () => {
         <div className=" h-screen flex flex-col justify-center my-auto px-20">
           <h1
             className="mb-[4rem] z-30 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 lg:text-[750%]"
-            // data-aos="fade-right"
-            // data-aos-delay="100"
+            data-aos="fade-right"
+            data-aos-delay="100"
           >
             5KSANA
           </h1>

@@ -10,6 +10,7 @@ import Shop from "./Pages/Shop";
 import CardPage from "./Pages/CardPage";
 import Cart from "./Pages/Cart";
 import Payment from "./Pages/Payment";
+import About from "./Pages/About";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/Shop" element={<Shop />} />
+
+          <Route path="/About" element={<About />} />
           <Route path="/CardPage" element={<CardPage />} />
 
           <Route path="/Cart" element={<Cart />} />
