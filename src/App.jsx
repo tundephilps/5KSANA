@@ -11,6 +11,9 @@ import CardPage from "./Pages/CardPage";
 import Cart from "./Pages/Cart";
 import Payment from "./Pages/Payment";
 import About from "./Pages/About";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+import Auction from "./Pages/Auction";
 
 function App() {
   useEffect(() => {
@@ -27,9 +30,12 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/Shop" element={<Shop />} />
 
+          <Route path="/Login" element={<Login />} />
+          <Route path="/SignUp" element={<Signup />} />
           <Route path="/About" element={<About />} />
           <Route path="/CardPage" element={<CardPage />} />
 
+          <Route path="/Auction" element={<Auction />} />
           <Route path="/Cart" element={<Cart />} />
 
           <Route path="/Payment" element={<Payment />} />

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Cart = ({ toggleModal }) => {
   return (
-    <div className="bg-[#29282a]/70 lg:p-8 p-2 min-h-[80vh] lg:w-full w-full mx-auto text-white rounded-2xl ">
+    <div className="bg-[#29282a]/70 lg:p-8 p-2 min-h-[100vh] lg:w-full w-full mx-auto text-white rounded-2xl ">
       <div className="flex items-start justify-between">
         <p className="text-2xl font-bold px-4">CART</p>
         {/* <FaTimes onClick={toggleModal} /> */}
