@@ -43,10 +43,13 @@ const CardPage = () => {
               <div className="text-sm text-gray-400">
                 <p>Delivery</p>
                 <p>Dimension (cm):</p>
+
+                <p>Dimension (inches):</p>
               </div>
               <div className="text-end">
                 <p>International-Free</p>
                 <p>30x40</p>
+                <p>11.8x15.7</p>
               </div>
             </div>
             <div className="flex items-center justify-between ">

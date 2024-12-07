@@ -1,9 +1,9 @@
 import React from "react";
-import Or from "../assets/or.png";
+import Or from "../../assets/or.png";
 
-import Card1 from "../assets/Card1.png";
+import Card1 from "../../assets/Card1.png";
 
-import Card2 from "../assets/Card2.png";
+import Card2 from "../../assets/Card2.png";
 
 const PayTabCard = () => {
   return (
@@ -20,11 +20,11 @@ const PayTabCard = () => {
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="phone" className="block text-sm font-medium mb-2">
+        <label htmlFor="Card" className="block text-sm font-medium mb-2">
           Card Number *
         </label>
         <input
-          type="text"
+          type="number"
           placeholder="0000 000 0000"
           className="bg-[#212121] border-[#212121] text-sm rounded-md focus:outline-none focus:ring-2 focus:ring-[#fccb00] focus:border-[#fccb00] block w-full p-2.5"
         />

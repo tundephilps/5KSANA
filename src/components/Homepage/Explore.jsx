@@ -1,9 +1,9 @@
 import React from "react";
-import Frame from "../assets/Frame.png";
+import Frame from "../../assets/Frame.png";
 
-import Art from "../assets/Art.png";
+import Art from "../../assets/Art.png";
 import { FiShoppingBag } from "react-icons/fi";
-import Bitcoin from "../assets/bitcoin.png";
+import Bitcoin from "../../assets/bitcoin.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

@@ -1,6 +1,6 @@
 import React from "react";
-import Frame from "../assets/Frame2.png";
-import ContactForm from "./ContactForm";
+import Frame from "../../assets/Frame2.png";
+import ContactForm from "../ContactForm";
 
 const Connected = () => {
   return (

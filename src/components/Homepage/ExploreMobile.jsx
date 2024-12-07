@@ -1,11 +1,10 @@
 import React from "react";
-import Art from "../assets/Art.png";
+import Art from "../../assets/Art.png";
 import { FiShoppingBag } from "react-icons/fi";
-import Bitcoin from "../assets/bitcoin.png";
+import Bitcoin from "../../assets/bitcoin.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import { useNavigate } from "react-router-dom";
 
 const ExploreMobile = () => {

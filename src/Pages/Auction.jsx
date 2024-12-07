@@ -2,7 +2,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import CardSwiper from "../components/CardSwiper";
 import { FaBell } from "react-icons/fa";
 import React, { useState } from "react";
-import BetHistory from "../components/BetHistory";
+import BetHistory from "../components/Auction/BetHistory";
 import { Link } from "react-router-dom";
 
 const Auction = () => {

@@ -38,10 +38,10 @@ const PaymentTabs = () => {
 
   return (
     <div className=" text-white lg:p-8 p-0 rounded-lg">
-      <div className="p-2 bg-[#1a1a1a] block rounded-lg w-56 mx-auto px-1">
+      <div className="p-2 bg-[#1a1a1a] block rounded-lg w-40 mx-auto px-1">
         <div className="flex justify-center">
           <div
-            className={`px-4 py-2  cursor-pointer transition-colors text-xs duration-300 ${
+            className={`px-2 py-2  cursor-pointer transition-colors text-xs duration-300 ${
               activeTab === "crypto-pay"
                 ? "bg-[#434343] text-white rounded-lg"
                 : "bg-[#1a1a1a] "

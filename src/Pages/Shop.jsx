@@ -6,7 +6,7 @@ import { GiSettingsKnobs } from "react-icons/gi";
 
 import Art from "../assets/Art.png";
 import Bitcoin from "../assets/bitcoin.png";
-import Pagination from "../components/Pagination";
+import Pagination from "../components/Shop/Pagination";
 import { useNavigate } from "react-router-dom";
 
 const Shop = () => {

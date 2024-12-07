@@ -33,11 +33,7 @@
   height: 1em;
   background: linear-gradient(#faa504, #141001);
   margin: auto;
-  /* position: absolute;
-  top: 0;
-  left: 50%;
-  right: 0;
-  bottom: 0; */
+
   animation: rotate_4001510 7s infinite linear;
   transform-style: preserve-3d;
 }

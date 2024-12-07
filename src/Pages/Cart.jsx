@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaMinus, FaPlus, FaTimes } from "react-icons/fa";
 import { HiTrash } from "react-icons/hi2";
 import Art2 from "../assets/Art.png";
@@ -9,6 +9,18 @@ import Bitcoin from "../assets/bitcoin.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cart = ({ toggleModal }) => {
+  const [count, setCount] = useState(1);
+  const [price, setPrice] = useState(0.1);
+
+  const handleIncrement = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  const handleDecrement = () => {
+    if (count > 1) {
+      setCount((prevCount) => prevCount - 1);
+    }
+  };
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -56,15 +68,22 @@ const Cart = ({ toggleModal }) => {
                       <p>30x40</p>
                     </div>
                   </div>
+                  {/* Counter */}
                   <div className="flex items-center justify-between  ">
                     <div className="flex items-center gap-2 cursor-pointer">
-                      <div className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full">
+                      <div
+                        onClick={handleDecrement}
+                        className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full"
+                      >
                         <FaMinus />
                       </div>
                       <div className="border border-white h-9 w-16 flex justify-center items-center rounded-full">
-                        1
+                        {count}
                       </div>
-                      <div className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full">
+                      <div
+                        onClick={handleIncrement}
+                        className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full"
+                      >
                         <FaPlus />
                       </div>
                     </div>
@@ -102,13 +121,19 @@ const Cart = ({ toggleModal }) => {
                   </div>
                   <div className="flex items-center justify-between  ">
                     <div className="flex items-center gap-2 cursor-pointer">
-                      <div className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full">
+                      <div
+                        onClick={handleDecrement}
+                        className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full"
+                      >
                         <FaMinus />
                       </div>
                       <div className="border border-white h-9 w-16 flex justify-center items-center rounded-full">
-                        1
+                        {count}
                       </div>
-                      <div className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full">
+                      <div
+                        onClick={handleIncrement}
+                        className="border text-1xl border-white hover:bg-white/50 h-9 w-9 flex justify-center items-center rounded-full"
+                      >
                         <FaPlus />
                       </div>
                     </div>

@@ -47,28 +47,28 @@ const PayTabCrypto = () => {
       <div className="bg-black text-white  rounded-lg">
         <div className="flex flex-col gap-4 items-start  mb-4">
           <div className="bg-[#1a1a1a] px-6 rounded-xl w-full py-6">
-            <label className="mr-4 font-medium">
+            <label className="mr-4 font-medium flex items-center">
               <input
                 type="radio"
                 name="payment-option"
                 value="international-free"
                 checked={selectedOption === "international-free"}
                 onChange={() => handleOptionChange("international-free")}
-                className="mr-2  text-[#fccb00] focus:ring-[#fccb00]"
+                className="mr-2  text-[#fccb00] focus:ring-[#fccb00] accent-white  h-4 w-4"
               />
               International-Free
             </label>
           </div>
 
           <div className="bg-[#1a1a1a] px-6 rounded-xl w-full py-6">
-            <label className="font-medium">
+            <label className="font-medium flex items-center">
               <input
                 type="radio"
                 name="payment-option"
                 value="btc"
                 checked={selectedOption === "btc"}
                 onChange={() => handleOptionChange("btc")}
-                className="mr-2 text-[#fccb00] focus:ring-[#fccb00]"
+                className="mr-2  text-[#fccb00] focus:ring-[#fccb00] accent-white h-4 w-4"
               />
               BTC
             </label>

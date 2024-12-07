@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Explore from "../components/Explore";
-import Connected from "../components/Connected";
-import ExploreMobile from "../components/ExploreMobile";
-import HeroMobile from "../components/HeroMobile";
+import Hero from "../components/Homepage/Hero";
+import Explore from "../components/Homepage/Explore";
+import Connected from "../components/Homepage/Connected";
+import ExploreMobile from "../components/Homepage/ExploreMobile";
+import HeroMobile from "../components/Homepage/HeroMobile";
 
 const Homepage = () => {
   return (

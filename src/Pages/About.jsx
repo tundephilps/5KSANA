@@ -9,7 +9,7 @@ import Cube3 from "../assets/Cube3.png";
 
 import { FaTrophy } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Connected from "../components/Connected";
+import Connected from "../components/Homepage/Connected";
 import ContactForm2 from "../components/ContactForm2";
 
 const About = () => {
