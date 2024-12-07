@@ -24,12 +24,6 @@ const Login = () => {
           </button>
           <div className="flex items-center justify-center h-full ">
             <div className="bg-[#171717] text-white p-8 rounded-lg shadow-lg lg:w-96 w-full relative">
-              {/* Close button */}
-              {/* <button className="absolute top-4 right-4 text-white text-xl hover:text-gray-400">
-                &times;
-              </button> */}
-
-              {/* Sign In Header */}
               <h2 className="text-2xl font-bold text-center mb-6">SIGN IN</h2>
 
               {/* Email and Password Form */}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/Logo.png";
 import { CiSearch } from "react-icons/ci";
 import { CgShoppingBag } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import Cart from "../Pages/Cart";
+import Cart from "../../Pages/Cart";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -54,28 +54,30 @@ const Navbar = () => {
             </div>
 
             <button className="md:hidden" onClick={toggleMenu}>
-              <GiHamburgerMenu size={24} />
+              {isOpen ? <FaTimes size={24} /> : <GiHamburgerMenu size={24} />}
             </button>
           </div>
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden mt-4 space-y-2">
+        <div className="md:hidden mt-4 space-y-4">
           <Link to="/Shop" className="block hover:text-gray-400">
-            SHOP
+            <div className="hover:bg-white/10 rounded-md p-2">SHOP</div>
           </Link>
           <Link to="/" className="block hover:text-gray-400">
-            BITCOIN ART GALLERY
+            <div className="hover:bg-white/10 rounded-md p-2">
+              BITCOIN ART GALLERY
+            </div>
           </Link>
           <Link to="/" className="block hover:text-gray-400">
-            CONTACT
+            <div className="hover:bg-white/10 rounded-md p-2">CONTACT</div>
           </Link>
           <Link to="/About" className="block hover:text-gray-400">
-            ABOUT ME
+            <div className="hover:bg-white/10 rounded-md p-2">ABOUT ME</div>
           </Link>
           <Link
-            to="/"
-            className="w-[100px] bg-[#FCCB00] text-sm py-1.5 flex items-center justify-center rounded-full cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-yellow-200 before:to-[rgb(149,136,27)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
+            to="/Login"
+            className="w-full bg-[#FCCB00] text-sm py-1.5 flex items-center justify-center rounded-full cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-yellow-200 before:to-[rgb(149,136,27)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-black font-semibold"
           >
             Login
           </Link>
@@ -83,7 +85,7 @@ const Navbar = () => {
       )}
       {isModalOpen && (
         <div className=" top-[-10%] absolute     py-4   z-50">
-          <div className="fixed lg:px-[20%] px-2  top-0 left-0 bg-[#29282a]/90 p-8 min-h-[80vh] w-full text-white rounded-2xl z-50">
+          <div className="fixed lg:px-[20%] px-2  top-0 left-0 bg-black/80 p-8 min-h-[80vh] w-full text-white z-50">
             <button
               className="absolute top-4 right-4 text-white hover:text-gray-400"
               onClick={toggleModal}

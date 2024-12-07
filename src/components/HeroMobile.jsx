@@ -7,7 +7,7 @@ const HeroMobile = () => {
   return (
     <div className="relative lg:h-screen h-full bg-black ">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <div className="absolute lg:top-1/2 top-[30%] right-12 transform -translate-x-1/2 -translate-y-1/2 w-[80vh] h-[80vh]  bg-gradient-to-r from-[#ffbc00] to-[#ff6b00] rounded-full blur-3xl opacity-30 animate-pulse" />
+        <div className="absolute lg:top-1/2 top-[30%] right-0 transform -translate-y-1/2 w-[80vh] h-[80vh]  bg-gradient-to-r from-[#ffbc00] to-[#ff6b00] rounded-full blur-3xl opacity-30 animate-pulse" />
       </div>
       <section className=" lg:px-[80px] px-4 flex flex-col-reverse justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
         <div className="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
@@ -42,7 +42,7 @@ const HeroMobile = () => {
           <Circular />
         </div>
 
-        <div className="lg:h-48   rounded-lg shadow-lg h-[500px] items-center justify-center flex  z-30">
+        <div className="lg:h-48   rounded-lg  h-[500px] items-center justify-center flex  z-30">
           <div className="coin">
             <div className="side heads">
               <svg

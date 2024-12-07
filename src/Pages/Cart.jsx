@@ -12,7 +12,6 @@ const Cart = ({ toggleModal }) => {
     <div className="bg-[#29282a]/70 lg:p-8 p-2 min-h-[100vh] lg:w-full w-full mx-auto text-white rounded-2xl ">
       <div className="flex items-start justify-between">
         <p className="text-2xl font-bold px-4">CART</p>
-        {/* <FaTimes onClick={toggleModal} /> */}
       </div>
 
       <div className=" h-[600px] overscroll-y-auto overflow-y-auto w-full">
@@ -101,7 +100,7 @@ const Cart = ({ toggleModal }) => {
           </div>
         </div>
         {/* Card */}
-        <div className=" grid lg:grid-cols-3 grid-cols-1 pt-6 gap-6 w-full px-4">
+        {/* <div className=" grid lg:grid-cols-3 grid-cols-1 pt-6 gap-6 w-full px-4">
           <img
             src={Art2}
             className="h-[160px] w-full lg:col-span-1 col-span-3 rounded-md"
@@ -141,18 +140,18 @@ const Cart = ({ toggleModal }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <hr className="mt-6" />
-        <div className="flex flex-row items-center justify-end gap-6 p-6">
+        <hr className="my-6" />
+        <div className="flex flex-row items-center justify-end gap-6 lg:px-6 px-2">
           <p>Total: </p>
-          <span className="text-gray-100 text-sm inline-flex gap-2 items-center bg-slate-700 px-2 py-1 rounded-full">
+          <span className="text-gray-100 lg:text-sm text-xs inline-flex gap-2 items-center bg-slate-700 px-3 py-1 rounded-full">
             {" "}
             <img src={Bitcoin} className="text-3xl " /> 0.1000BTC
           </span>
 
           <Link
-            to="/"
+            to="/Payment"
             className="w-[100px] bg-[#FCCB00] text-sm py-1.5 flex items-center justify-center rounded-full cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-yellow-200 before:to-[rgb(149,136,27)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
           >
             Pay

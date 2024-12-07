@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PaymentForm = () => {
+  const [checked, setChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
+
   return (
     <div className="bg-black text-white py-8 rounded-lg">
       <form>
@@ -139,12 +145,41 @@ const PaymentForm = () => {
             className="bg-[#212121] border-[#212121] text-sm rounded-md h-44 focus:outline-none focus:ring-2 focus:ring-[#fccb00] focus:border-[#fccb00] block w-full p-2.5"
           />
         </div>
-        <button
-          type="submit"
-          className="bg-[#fccb00] hover:bg-[#fccb00]/80 text-black font-medium rounded-full px-6 py-2.5 text-center inline-flex items-center"
-        >
-          Submit
-        </button>
+
+        <div className="flex items-center gap-2">
+          {/* Custom Checkbox */}
+          <div
+            onClick={handleCheckboxChange}
+            className={`w-5 h-5  flex items-center justify-center cursor-pointer rounded-md ${
+              checked ? "bg-[#fcc800]" : "bg-black border border-yellow-500"
+            }`}
+          >
+            {checked && (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2.5"
+                stroke="white"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            )}
+          </div>
+
+          {/* Label */}
+          <label
+            onClick={handleCheckboxChange}
+            className="text-white text-sm cursor-pointer"
+          >
+            Ship to a different address?
+          </label>
+        </div>
       </form>
     </div>
   );

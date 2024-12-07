@@ -4,6 +4,7 @@ import Bit1 from "../assets/Bit1.png";
 import Bit2 from "../assets/Bit2.png";
 import Bit3 from "../assets/Bit3.png";
 import { CiMail } from "react-icons/ci";
+import { FiSend } from "react-icons/fi";
 
 const ContactForm = () => {
   return (
@@ -49,32 +50,31 @@ const ContactForm = () => {
             ></textarea>
 
             {/* Privacy Checkbox */}
-            <div className="flex lg:flex-row flex-col lg:justify-between justify-start">
-              <div className="flex items-start ">
-                <input
-                  type="checkbox"
-                  id="privacy"
-                  className="mt-1 h-4 w-4 text-yellow-500 bg-gray-800 border-gray-600 rounded focus:ring-yellow-500 focus:ring-offset-black"
-                />
-                <label
-                  htmlFor="privacy"
-                  className="ml-2 text-gray-400 lg:whitespace-nowrap whitespace-normal"
-                >
-                  I have read and agree with the privacy policy
-                </label>
-              </div>
-
-              <button
-                type="submit"
-                className="mt-12 flex items-center justify-center lg:ml-8 ml-0  bg-[#fcc800] text-black lg:w-[108px] w-full px-6  py-2 rounded-3xl font-bold hover:bg-yellow-600"
-              >
-                Send
-                <span className="ml-2 text-lg">🚀</span>
-              </button>
-            </div>
-
-            {/* Send Button */}
           </form>
+          <div className="flex lg:flex-row flex-col  pt-4 justify-between">
+            <div className="flex items-start ">
+              <input
+                type="checkbox"
+                id="privacy"
+                className="mt-1 h-4 w-4 text-yellow-500 bg-gray-800 border-gray-600 rounded focus:ring-yellow-500 focus:ring-offset-black"
+              />
+              <label
+                htmlFor="privacy"
+                className="ml-2 text-gray-400 lg:whitespace-nowrap whitespace-normal"
+              >
+                I have read and agree with the privacy policy
+              </label>
+            </div>
+            <button
+              type="submit"
+              className="mt-8 flex items-center justify-center ml-0  bg-[#fcc800] text-black lg:w-[108px] w-full px-6 py-1 rounded-3xl font-bold hover:bg-yellow-600"
+            >
+              Send
+              <span className="ml-2 text-lg p-2 bg-white rounded-full">
+                <FiSend />
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 

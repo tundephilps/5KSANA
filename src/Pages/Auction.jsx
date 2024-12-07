@@ -3,6 +3,7 @@ import CardSwiper from "../components/CardSwiper";
 import { FaBell } from "react-icons/fa";
 import React, { useState } from "react";
 import BetHistory from "../components/BetHistory";
+import { Link } from "react-router-dom";
 
 const Auction = () => {
   const [isToggled, setIsToggled] = useState(true);
@@ -10,10 +11,10 @@ const Auction = () => {
     <div className="bg-black">
       {/* Header */}
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:px-[80px] px-4 py-8">
-        <div className="flex items-center gap-3 text-gray-400 text-sm  ">
-          <p>Home</p>
+        <div className="flex items-center gap-3 text-gray-400 text-sm cursor-pointer ">
+          <Link to="/">Home</Link>
           <MdKeyboardArrowRight />
-          <p>Shop</p>
+          <Link to="/Shop">Shop</Link>
           <MdKeyboardArrowRight />
           <p className="text-white">Auction</p>
         </div>
@@ -71,12 +72,14 @@ const Auction = () => {
 
         <div className="text-white lg:w-[80%] w-full lg:px-0 px-4 ">
           <p className=" text-3xl">PAINTING-EMBROIDERY-UNKNOWN BITCOINS</p>
-          <div className="flex flex-row justify-between text-[#cfcfcf] py-4">
+          <div className="flex items-baseline  flex-row justify-between text-[#cfcfcf] py-4">
             <div>
               <p>Current rate</p>
-              <p className="text-[#fcc800] text-2xl font-semibold">0.1000BTC</p>
+              <p className="text-[#fcc800] lg:text-2xl text-base font-semibold">
+                0.1000BTC
+              </p>
             </div>
-            <p>Remaining auction time: 02:40:30</p>
+            <p className="text-xs">Remaining auction time: 02:40:30</p>
           </div>
 
           <div className="mb-4">

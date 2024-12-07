@@ -1,14 +1,14 @@
 import React from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { FaCcVisa, FaCcMastercard, FaCcAmex, FaCcPaypal } from "react-icons/fa";
-import Logo from "../assets/Logo.png";
+import Logo from "../../assets/Logo.png";
 
-import Pay1 from "../assets/Pay1.png";
+import Pay1 from "../../assets/Pay1.png";
 
-import Pay2 from "../assets/Pay2.png";
-import Pay3 from "../assets/Pay3.png";
-import Pay4 from "../assets/Pay4.png";
-import Pay5 from "../assets/Pay5.png";
+import Pay2 from "../../assets/Pay2.png";
+import Pay3 from "../../assets/Pay3.png";
+import Pay4 from "../../assets/Pay4.png";
+import Pay5 from "../../assets/Pay5.png";
 
 const Footer = () => {
   return (

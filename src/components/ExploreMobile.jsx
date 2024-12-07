@@ -6,7 +6,15 @@ import Bitcoin from "../assets/bitcoin.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
+import { useNavigate } from "react-router-dom";
+
 const ExploreMobile = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate("/Cardpage"); // Navigate to the /cardpage route
+  };
+
   return (
     <div className="bg-black text-white p-4  shadow-lg">
       <p className="text-white text-center text-[53px] leading-none font-bold py-6">
@@ -20,7 +28,7 @@ const ExploreMobile = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div>
+          <div onClick={handleCardClick}>
             <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
               <div className="relative">
                 <img src={Art} alt="NFT" className="rounded-lg w-full h-auto" />
@@ -54,7 +62,7 @@ const ExploreMobile = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div>
+          <div onClick={handleCardClick}>
             <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
               <div className="relative">
                 <img src={Art} alt="NFT" className="rounded-lg w-full h-auto" />
@@ -90,6 +98,7 @@ const ExploreMobile = () => {
       </Swiper>
 
       <button
+        onClick={handleCardClick}
         type="button"
         className="mt-8 text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 lg:w-auto w-full me-2 mb-8"
       >

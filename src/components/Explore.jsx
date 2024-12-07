@@ -9,8 +9,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 const Explore = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate("/Cardpage"); // Navigate to the /cardpage route
+  };
+
   return (
     <div className="bg-black relative">
       {/* Background Image */}
@@ -51,7 +58,7 @@ const Explore = () => {
         <SwiperSlide>
           <div className="grid grid-cols-4 gap-8 px-12 pt-[5%] text-white">
             {/* Card */}
-            <div>
+            <div onClick={handleCardClick}>
               <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
                 <div className="relative">
                   <img src={Art} alt="NFT" className="rounded-lg w-full h-64" />
@@ -72,52 +79,25 @@ const Explore = () => {
                       {" "}
                       <img src={Bitcoin} className="text-3xl " /> 0.1000BTC
                     </span>
-                    <div className="flex items-center bg-white text-black p-2 rounded-full">
-                      <FiShoppingBag className="w-5 h-5 mr-2" />
-                      <span className="text-sm font-medium">ADD TO CART</span>
-                    </div>
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold uppercase pt-2">
-                Painting-Embroidery-Unknown-BITCOIN
-              </h3>
             </div>
             {/* Card */}
-            <div>
-              <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
-                <div className="relative">
-                  <img src={Art} alt="NFT" className="rounded-lg w-full h-64" />
-                </div>
-                <div className="mt-4">
-                  <div className="flex justify-between items-center pb-4">
-                    <div className="text-sm text-gray-400">
-                      <p>Delivery</p>
-                      <p>Dimension (cm):</p>
-                    </div>
-                    <div className="text-end">
-                      <p>International-Free</p>
-                      <p>30x40</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between ">
-                    <span className="text-gray-100 text-sm inline-flex gap-2 items-center bg-[#29282a] px-2 py-1 rounded-full">
-                      {" "}
-                      <img src={Bitcoin} className="text-3xl " /> 0.1000BTC
-                    </span>
-                    <div className="flex items-center bg-white text-black p-2 rounded-full">
-                      <FiShoppingBag className="w-5 h-5 mr-2" />
-                      <span className="text-sm font-medium">ADD TO CART</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div
+              onClick={handleCardClick}
+              className="flex justify-end flex-col gap-4 "
+            >
               <h3 className="text-xl font-bold uppercase pt-2">
                 Painting-Embroidery-Unknown-BITCOIN
               </h3>
-            </div>{" "}
+              <div className="flex items-center bg-white px-4 w-40 text-black p-2 rounded-full">
+                <FiShoppingBag className="w-5 h-5 mr-2" />
+                <span className="text-sm font-medium">ADD TO CART</span>
+              </div>
+            </div>
             {/* Card */}
-            <div>
+            <div onClick={handleCardClick}>
               <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
                 <div className="relative">
                   <img src={Art} alt="NFT" className="rounded-lg w-full h-64" />
@@ -138,49 +118,22 @@ const Explore = () => {
                       {" "}
                       <img src={Bitcoin} className="text-3xl " /> 0.1000BTC
                     </span>
-                    <div className="flex items-center bg-white text-black p-2 rounded-full">
-                      <FiShoppingBag className="w-5 h-5 mr-2" />
-                      <span className="text-sm font-medium">ADD TO CART</span>
-                    </div>
                   </div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold uppercase pt-2">
-                Painting-Embroidery-Unknown-BITCOIN
-              </h3>
-            </div>{" "}
+            </div>
             {/* Card */}
-            <div>
-              <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
-                <div className="relative">
-                  <img src={Art} alt="NFT" className="rounded-lg w-full h-64" />
-                </div>
-                <div className="mt-4">
-                  <div className="flex justify-between items-center pb-4">
-                    <div className="text-sm text-gray-400">
-                      <p>Delivery</p>
-                      <p>Dimension (cm):</p>
-                    </div>
-                    <div className="text-end">
-                      <p>International-Free</p>
-                      <p>30x40</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between ">
-                    <span className="text-gray-100 text-sm inline-flex gap-2 items-center bg-[#29282a] px-2 py-1 rounded-full">
-                      {" "}
-                      <img src={Bitcoin} className="text-3xl " /> 0.1000BTC
-                    </span>
-                    <div className="flex items-center bg-white text-black p-2 rounded-full">
-                      <FiShoppingBag className="w-5 h-5 mr-2" />
-                      <span className="text-sm font-medium">ADD TO CART</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div
+              onClick={handleCardClick}
+              className="flex justify-end flex-col gap-4 "
+            >
               <h3 className="text-xl font-bold uppercase pt-2">
                 Painting-Embroidery-Unknown-BITCOIN
               </h3>
+              <div className="flex items-center bg-white px-4 w-40 text-black p-2 rounded-full">
+                <FiShoppingBag className="w-5 h-5 mr-2" />
+                <span className="text-sm font-medium">ADD TO CART</span>
+              </div>
             </div>
           </div>
         </SwiperSlide>

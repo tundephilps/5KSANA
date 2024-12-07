@@ -48,7 +48,7 @@ const PaymentTabs = () => {
             }`}
             onClick={() => handleTabClick("crypto-pay")}
           >
-            <FaMoneyBillAlt className="inline-block mr-2" />
+            {/* <FaMoneyBillAlt className="inline-block mr-2" /> */}
             Crypto Pay
           </div>
           <div
@@ -59,7 +59,7 @@ const PaymentTabs = () => {
             }`}
             onClick={() => handleTabClick("card-pay")}
           >
-            <FaCreditCard className="inline-block mr-2" />
+            {/* <FaCreditCard className="inline-block mr-2" /> */}
             Card Pay
           </div>
         </div>
