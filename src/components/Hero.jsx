@@ -12,14 +12,14 @@ const Hero = () => {
       <section className="grid grid-cols-2 w-full">
         <div className=" h-screen flex flex-col justify-center my-auto px-20">
           <h1
-            className="mb-[4rem] z-30 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 lg:text-[750%]"
+            className="mb-[4rem] z-30 text-7xl font-bold font-bricolage text-white sm:text-5xl md:mb-2 lg:text-[20vh]"
             data-aos="fade-right"
             data-aos-delay="100"
           >
             5KSANA
           </h1>
           <p
-            className="mb-8 z-30  text-white md:mb-6 lg:w-4/5 xl:text-[32px]"
+            className="mb-8 z-30  text-white md:mb-6  xl:text-[200%]"
             data-aos="fade-right"
             data-aos-delay="300"
             data-aos-easing="ease-in-sine"
@@ -30,9 +30,9 @@ const Hero = () => {
           <button
             type="button"
             className="z-30 lg:w-44 w-full text-white bg-transparent border-white border focus:outline-none hover:bg-yellow-500 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5   me-2 mb-8"
-            // data-aos="fade-right"
-            // data-aos-delay="500"
-            // data-aos-easing="ease-in-sine"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-sine"
           >
             BROWSE GALLERY
           </button>
