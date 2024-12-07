@@ -47,13 +47,19 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-4">
             <a href="/" className="hover:text-gray-400">
-              <CiSearch size={24} className="text-white font-extrabold" />
+              <CiSearch
+                size={24}
+                className="text-white font-extrabold cursor-pointer"
+              />
             </a>
-            <div onClick={toggleModal} className="hover:text-gray-400">
+            <div
+              onClick={toggleModal}
+              className="hover:text-gray-400 cursor-pointer"
+            >
               <CgShoppingBag size={20} />
             </div>
 
-            <button className="md:hidden" onClick={toggleMenu}>
+            <button className="md:hidden cursor-pointer" onClick={toggleMenu}>
               {isOpen ? <FaTimes size={24} /> : <GiHamburgerMenu size={24} />}
             </button>
           </div>
@@ -83,19 +89,7 @@ const Navbar = () => {
           </Link>
         </div>
       )}
-      {isModalOpen && (
-        <div className=" top-[-10%] absolute     py-4   z-50">
-          <div className="fixed lg:px-[20%] px-2  top-0 left-0 bg-black/80 p-8 min-h-[80vh] w-full text-white z-50">
-            <button
-              className="absolute top-4 right-4 text-white hover:text-gray-400"
-              onClick={toggleModal}
-            >
-              <FaTimes />
-            </button>
-            <Cart />
-          </div>
-        </div>
-      )}
+      {isModalOpen && <Cart toggleModal={toggleModal} />}
     </nav>
   );
 };

@@ -13,7 +13,7 @@ import Pay5 from "../../assets/Pay5.png";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-10">
-      <div className="lg:px-[80px] mx-auto flex lg:flex-row flex-col lg:items-center items-start justify-between md:grid-cols-3 gap-8 px-8">
+      <div className="lg:px-[120px] mx-auto flex lg:flex-row flex-col lg:items-center items-start justify-between md:grid-cols-3 gap-8 px-8">
         {/* Left Section */}
         <div>
           <img src={Logo} />

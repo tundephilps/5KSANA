@@ -37,7 +37,7 @@ const Explore = () => {
         <SwiperSlide>
           {/* Centered Text */}
 
-          <div className="font-sansation pt-[10%] flex flex-col items-center justify-center">
+          <div className="font-sansation pt-[20%] flex flex-col items-center justify-center">
             <h1
               className="text-white  text-5xl md:text-9xl font-bold text-center"
               data-aos="zoom-in-up"
@@ -56,7 +56,7 @@ const Explore = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-4 gap-8 px-12 pt-[5%] text-white">
+          <div className="grid grid-cols-4 gap-8 px-12 pt-[10%] text-white">
             {/* Card */}
             <div onClick={handleCardClick}>
               <div className="border-purple-700 border p-4 rounded-2xl gap-[16px] bg-gradient-to-b from-[#bea2ff]/50 to-black">
