@@ -78,8 +78,8 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="  absolute h-40 w-40 z-50  top-[10%] left-[-10%]  bg-[#Fcc800] opacity-100 blur-3xl animate-glow" />
-      <div className=" absolute h-40 w-40 z-50  bottom-[0%] right-[-10%]  bg-yellow-400 opacity-100 blur-3xl animate-glow" />
+      <div className="  absolute h-40 w-40 z-50  top-[10%] left-[-10%]  bg-[#Fcc800]/40 opacity-100 blur-3xl animate-glow" />
+      <div className=" absolute h-40 w-40 z-50  bottom-[0%] right-[-10%]  bg-yellow-400/30 opacity-100 blur-3xl animate-glow" />
       <img
         src={Bit1}
         className="animate-pulse absolute h-[116px] w-[116px] lg:bottom-4 bottom-[-19%] left-[-10%]"

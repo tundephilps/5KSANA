@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import Connected from "../components/Homepage/Connected";
 import ContactForm2 from "../components/ContactForm2";
 
-const About = () => {
+const AboutMobile = () => {
   const exhibitions = [
     { title: "CoinFest, Manchester, UK", year: "2021" },
     { title: "Lugano Plan ₿, Lugano, Switzerland", year: "2023" },
@@ -29,49 +29,52 @@ const About = () => {
         <img src={Owner} className="w-full" />{" "}
         <img src={Owner} className="w-full" />
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 py-16">
-        <div>
-          <p className="text-3xl font-semibold pb-6">BIOGRAPHY</p>
-          <p className="text-[#cfcfcf]">
-            I’m Aksana, also known as 5Ksana. I’m a Bitcoin artist and Fashion
-            designer from Poland!
-            <br />
-            <br />
-            I’ve been creating Bitcoin Physical Art since 2017!
-            <br />
-            <br /> Also,I am a professional tailor (a person that cuts and sews)
-            with over 22 years of experience!{" "}
-          </p>
-        </div>
-        <div className="flex items-center justify-center animate-bounce ">
-          <img src={Cube1} />
+      {/* Biography */}
+      <div className="py-8">
+        <p className="text-3xl font-semibold pb-6">BIOGRAPHY</p>
+        <p className="text-[#cfcfcf]">
+          I’m Aksana, also known as 5Ksana. I’m a Bitcoin artist and Fashion
+          designer from Poland!
+          <br />
+          <br />
+          I’ve been creating Bitcoin Physical Art since 2017!
+          <br />
+          <br /> Also,I am a professional tailor (a person that cuts and sews)
+          with over 22 years of experience!{" "}
+        </p>
+      </div>
+      <div className="">
+        <div className="flex items-end justify-end animate-bounce ">
+          <img src={Cube1} className="h-20 " />
         </div>
       </div>
+      {/* Education */}
+      <div className="py-8">
+        <p className="text-3xl font-semibold pb-6">EDUCATION</p>
+        <p className="text-[#cfcfcf]">
+          Vocational-Technical Education (Professional Technical Program based
+          on General Education with a specialization in Women’s Outerwear
+          Cutting), 2001.
+          <br />
+          <br />
+          Bachelor’s Degree in Consumer Services Technology (Instructor of
+          Cutting and Sewing Technology), 2008.
+          <br />
+          <br /> Main Technique: hand embroidery and sewing.
+        </p>
+      </div>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 lg:py-16 py-6">
-        <div className="flex items-center justify-center animate-spin ">
+      {/* Circular */}
+      <div className=" lg:py-16 py-6">
+        <div className="flex items-start justify-start animate-spin ">
           <img src={Cube2} className="h-60 w-60" />
-        </div>
-        <div>
-          <p className="text-3xl font-semibold pb-6">EDUCATION</p>
-          <p className="text-[#cfcfcf]">
-            Vocational-Technical Education (Professional Technical Program based
-            on General Education with a specialization in Women’s Outerwear
-            Cutting), 2001.
-            <br />
-            <br />
-            Bachelor’s Degree in Consumer Services Technology (Instructor of
-            Cutting and Sewing Technology), 2008.
-            <br />
-            <br /> Main Technique: hand embroidery and sewing.
-          </p>
         </div>
       </div>
 
       <div className=" text-white flex lg:flex-row flex-col items-center relative pt-12">
         <img
           src={Cube3}
-          className="h-60 w-60 absolute right-[-6%] top-[-45%]"
+          className="h-60 w-60 absolute right-[-6%] top-[-40%]"
         />
         {/* Group Exhibitions Section */}
         <div className="w-full max-w-4xl">
@@ -82,8 +85,8 @@ const About = () => {
           </h2>
           <ul className="space-y-4">
             {exhibitions.map((item, index) => (
-              <li key={index} className="flex items-center text-lg">
-                <FaTrophy className="text-yellow-500 mr-3" />
+              <li key={index} className="flex items-center text-sm">
+                <FaTrophy className="text-yellow-500  mr-3" />
                 {item.title},{" "}
                 <span className="ml-1 font-semibold">{item.year}</span>
               </li>
@@ -124,4 +127,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMobile;

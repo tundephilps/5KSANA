@@ -29,10 +29,10 @@ const Navbar = () => {
             <Link to="/Shop" className="hover:text-gray-400">
               SHOP
             </Link>
-            <Link to="/" className="hover:text-gray-400">
+            <Link to="/Gallery" className="hover:text-gray-400">
               BITCOIN ART GALLERY
             </Link>
-            <Link to="/" className="hover:text-gray-400">
+            <Link to="/Contactus" className="hover:text-gray-400">
               CONTACT
             </Link>
             <Link to="/About" className="hover:text-gray-400">
@@ -70,12 +70,12 @@ const Navbar = () => {
           <Link to="/Shop" className="block hover:text-gray-400">
             <div className="hover:bg-white/10 rounded-md p-2">SHOP</div>
           </Link>
-          <Link to="/" className="block hover:text-gray-400">
+          <Link to="/Gallery" className="block hover:text-gray-400">
             <div className="hover:bg-white/10 rounded-md p-2">
               BITCOIN ART GALLERY
             </div>
           </Link>
-          <Link to="/" className="block hover:text-gray-400">
+          <Link to="/Contactus" className="block hover:text-gray-400">
             <div className="hover:bg-white/10 rounded-md p-2">CONTACT</div>
           </Link>
           <Link to="/About" className="block hover:text-gray-400">

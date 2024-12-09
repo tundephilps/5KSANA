@@ -37,9 +37,9 @@ const Explore = () => {
         <SwiperSlide>
           {/* Centered Text */}
 
-          <div className="font-sansation pt-[20%] flex flex-col items-center justify-center">
+          <div className="font-sansation pt-40 flex flex-col items-center justify-center">
             <h1
-              className="text-white  text-5xl md:text-9xl font-bold text-center"
+              className="text-white font-sansation text-5xl md:text-9xl font-bold text-center"
               data-aos="zoom-in-up"
             >
               EXPLORE THE

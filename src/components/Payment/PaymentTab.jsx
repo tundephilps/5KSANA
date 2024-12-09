@@ -38,7 +38,7 @@ const PaymentTabs = () => {
 
   return (
     <div className=" text-white lg:p-8 p-0 rounded-lg">
-      <div className="p-2 bg-[#1a1a1a] block rounded-lg w-40 mx-auto px-1">
+      <div className="p-2 bg-[#1a1a1a] block rounded-lg w-44 mx-auto px-1">
         <div className="flex justify-center">
           <div
             className={`px-2 py-2  cursor-pointer transition-colors text-xs duration-300 ${

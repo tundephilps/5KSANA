@@ -14,6 +14,9 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Auction from "./Pages/Auction";
+import Gallery from "./Pages/Gallery";
+import Contactus from "./Pages/Contactus";
+import AboutMobile from "./Pages/AboutMobile";
 
 function App() {
   useEffect(() => {
@@ -32,9 +35,26 @@ function App() {
 
           <Route path="/Login" element={<Login />} />
           <Route path="/SignUp" element={<Signup />} />
-          <Route path="/About" element={<About />} />
+
+          <Route
+            path="/About"
+            element={
+              <div>
+                <div className="hidden lg:block">
+                  <About />
+                </div>
+                <div className="lg:hidden block">
+                  <AboutMobile />
+                </div>
+              </div>
+            }
+          />
+
+          <Route path="/Contactus" element={<Contactus />} />
+
           <Route path="/CardPage" element={<CardPage />} />
 
+          <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Auction" element={<Auction />} />
           <Route path="/Cart" element={<Cart />} />
 
